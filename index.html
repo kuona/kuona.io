@@ -9,100 +9,42 @@
 
     <title>Kuona</title>
 
-    <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Animation CSS -->
     <link href="css/animate.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body id="page-top" class="landing-page">
-  <div class="navbar-wrapper">
+<div class="navbar-wrapper">
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header page-scroll">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                  aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="app.kuona.io">Kuona</a>
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="app.kuona.io">Kuona</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="page-scroll" href="#home">Home</a></li>
+                    <li><a class="page-scroll" href="#team">Team</a></li>
+                    <li><a class="page-scroll" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a class="page-scroll" href="#page-top">Home</a></li>
-            <li><a class="page-scroll"
-            href="#features">Features</a></li>
-            <li><a class="page-scroll"
-                   href="#team">Team</a></li>
-            <li><a class="page-scroll"
-                   href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
     </nav>
-  </div>
-
-<div id="inSlider" class="carousel carousel-fade" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#inSlider" data-slide-to="0" class="active"></li>
-        <li data-target="#inSlider" data-slide-to="1"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <div class="container">
-                <div class="carousel-caption">
-                    <h1>Kuona
-                        <small>(Shona)</small>
-                        <br/>
-                        Providing insight into software development<br/>
-                    </h1>
-                    <p>metrics visualisation of key software development team systems.</p>
-
-                </div>
-                <div class="carousel-image wow zoomIn">
-                    <img src="img/landing/laptop.png" alt="laptop"/>
-                </div>
-            </div>
-            <!-- Set background for slide in css -->
-            <div class="header-back one"></div>
-
-        </div>
-        <div class="item">
-            <div class="container">
-                <div class="carousel-caption blank">
-                    <h1>Kuona presents meaningful <br/> measurements and optionons.</h1>
-
-                    <p>on the performance of key development systems.</p>
-
-                </div>
-            </div>
-            <!-- Set background for slide in css -->
-            <div class="header-back two"></div>
-        </div>
-    </div>
-    <a class="left carousel-control" href="#inSlider" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#inSlider" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
 </div>
 
-
-
-<section id="features" class="container features">
+<section id="home" class="container features">
     <div class="row">
         <div class="col-lg-12 text-center">
             <div class="navy-line"></div>
-            <h1>Operational advice and insight for software development teams.<br/> <span class="navy">Collections/Aanalysis/Visualisation.</span></h1>
+            <h1>Operational advice and insight for software development teams.<br/> <span class="navy">collection - analyse - visualise.</span>
+            </h1>
 
             <p>Kuona visualises data for insightful IT decision making.</p>
         </div>
@@ -112,46 +54,49 @@
             <div>
                 <i class="fa fa-mobile features-icon"></i>
 
-		<h2>Data Collection</h2>
-		
-		<p>The systems that we use to develop, build and
-		  deploy our software are largely untapped as a data
-		  source for deriving greater understanding of how to
-		  build better software.</p>
+                <h2>Collection</h2>
+
+                <p>The systems that we use to develop, build and
+                    deploy our software are largely untapped as a data
+                    source for deriving greater understanding of how to
+                    build better software.</p>
+
+                <p> Collectors capture data from IT systems (commits, builds, deploys) using
+                    application specific collectors</p>
             </div>
-	</div>
-	<div class="col-sm-3 text-center wow fadeInLeft">
-          <div class="m-t-lg">
-            <i class="fa fa-search features-icon"></i>
-	    
-            <h2>Data analysis</h2>
-	    
-            <p>Analysers process the captured data into data models to
-              drive charts and dashboards. More than one data source?
-              Compbine an correlate data across sources VCS/CI etc.</p>
-	    
-          </div>
+        </div>
+        <div class="col-sm-3 text-center wow fadeInLeft">
+            <div class="m-t-lg">
+                <i class="fa fa-search features-icon"></i>
+
+                <h2>Analyze</h2>
+
+                <p>Analysers process the captured data into data models that drive charts and dashboards. More than one
+                    data source? Analysers can combine or correlate data across sources VCS/CI etc.</p>
+
+                <p>Offering opinionated metrics or comparative analysis? Analysers can also output dashboard data for
+                    threshold and other simple metric views.</p>
+
+            </div>
         </div>
         <div class="col-sm-3 text-center wow fadeInRight">
             <div>
                 <i class="fa fa-bar-chart features-icon"></i>
 
-            <h2>Visualise</h2>
+                <h2>Visualise</h2>
 
-            <p>Show the true value of your analysis using charts, timesearies.</p>
+                <p>Show the true value of your analysis using charts, time-series charts, trends or tables.</p>
 
             </div>
-	</div>
+        </div>
         <div class="col-sm-3 text-center wow fadeInLeft">
-	    <div class="m-t-lg">
+            <div class="m-t-lg">
                 <i class="fa fa-google features-icon"></i>
-		
-                <h2>Dashboards</h2>
 
-		<p>Pull everythign together into compelling dashboards
-		  that can be used to help to drive reinforcing
-		  behaviours.</p>
-		
+                <h2>Dashboard</h2>
+
+                <p>Pull everything together into compelling dashboards</p>
+
             </div>
         </div>
     </div>
@@ -161,38 +106,48 @@
     <div class="container">
         <div class="row m-b-lg">
             <div class="col-lg-12 text-center">
-                <div class="navy-line"></div>
-                <h1>Our Team</h1>
+                <h1>Contributors</h1>
 
                 <p>There is always work to be done. Kuona development is part time and open source. Built by passionate
-                  developers like yourself.</p>
-		<p>Join the google group, hang out on slack or github</p>
+                    developers like yourself.</p>
+
+                <p>Join the google group, hang out on slack or checkout from <a
+                        href="https://github.com/kuona">GitHub</a></p>
             </div>
         </div>
         <div class="row">
-          <div class="col-sm-4 wow fadeInLeft">
-	    
-            <div class="team-member">
-            </div>
-	    
-          </div>
-            <div class="col-sm-4">
-                <div class="team-member wow zoomIn">
-		  <img src="images/graham_brooks_avatar.jpg" class="img-responsive img-circle img-small" alt="">
-		  <h4><span class="navy">Graham</span> Brooks</h4>
-		  
-		  <p>Chief Architect and lead developer. Graham is a passionate advocate of data driven decisioning
-                    within software development.</p>
-		  <ul class="list-inline social-icon">
-                    <li><a href="https://twitter.com/grahamcbrooks"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li><a href="https://www.linkedin.com/in/grahamcbrooks"><i class="fa fa-linkedin"></i></a>
-                    </li>
-		  </ul>
+            <div class="col-sm-4 wow fadeInLeft">
+
+                <div class="team-member">
+                    <img src="img/landing/odwayne_Irving.png" class="img-responsive img-circle img-small"
+                         alt="O'Dwayne Irving">
+                    <h4><span class="navy">O'Dwayne</span> Irving</h4>
+
+                    <p>Irie Developer trying to change the world, one day at a time.</p>
                 </div>
             </div>
+
+            <div class="col-sm-4">
+                <div class="team-member wow zoomIn">
+                    <img src="img/landing/graham_brooks.png" class="img-responsive img-circle img-small" alt="">
+                    <h4><span class="navy">Graham</span> Brooks</h4>
+
+                    <p>Chief Architect and lead developer. Graham is a passionate advocate of data driven decisioning
+                        within software development.</p>
+                    <ul class="list-inline social-icon">
+                        <li><a href="https://twitter.com/grahamcbrooks"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/in/grahamcbrooks"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
             <div class="col-sm-4 wow fadeInRight">
                 <div class="team-member">
+                    <img src="img/landing/filip_fafara.png" class="img-responsive img-circle img-small"
+                         alt="Filip Fafara">
+                    <h4><span class="navy">Filip</span> Fafara</h4>
                 </div>
             </div>
         </div>
@@ -204,10 +159,10 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <div class="navy-line"></div>
                 <h1>Development Roadmap</h1>
 
-                <p>The ideas behind kuona have been tested and evaluated on enterprise scale projects. Now is the time to bring them all together so that others can benefit. </p>
+                <p>The ideas behind kuona have been tested and evaluated on enterprise scale projects. Now is the time
+                    to bring them all together so that others can benefit. </p>
             </div>
         </div>
         <div class="row features-block">
@@ -242,10 +197,10 @@
                             <h2>Initial Prototyping</h2>
 
                             <p>The ideas and discussions lead to the
-                            first prototype written in Java as an
-                            all-in-one site generator, data collector
-                            and visualisation tool. Deployed within an
-                            enterprise setting for testing. </p>
+                                first prototype written in Java as an
+                                all-in-one site generator, data collector
+                                and visualisation tool. Deployed within an
+                                enterprise setting for testing. </p>
                             <span class="vertical-date"> August
                             <br/> <small>2014</small> </span>
                         </div>
@@ -263,7 +218,6 @@
     <div class="container">
         <div class="row m-b-lg">
             <div class="col-lg-12 text-center">
-                <div class="navy-line"></div>
                 <h1>Contact Us</h1>
 
                 <p>We have a google group up and running, slack and of course GitHub for source hosting.</p>
@@ -277,12 +231,9 @@
                     Or follow us on social platform
                 </p>
                 <ul class="list-inline social-icon">
-                    <li><a href="https://kuonadev.slack.com/"><i class="fa fa-slack"></i></a>
-                    </li>
-                    <li><a href="https://github.com/kuona/kuona"><i class="fa fa-github"></i></a>
-                    </li>
-                    <li><a href="https://groups.google.com/d/forum/kuona-dev"><i class="fa fa-google"></i></a>
-                    </li>
+                    <li><a href="https://kuonadev.slack.com/"><i class="fa fa-slack"></i></a></li>
+                    <li><a href="https://github.com/kuona"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://groups.google.com/d/forum/kuona-dev"><i class="fa fa-google"></i></a></li>
                 </ul>
             </div>
         </div>
