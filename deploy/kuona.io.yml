@@ -1,0 +1,36 @@
+---
+- hosts: kuona
+  remote_user: deploy
+  become: true
+  become_user: root
+  vars:
+    content_dir: /usr/share/nginx/kuona.io/public
+    server_name: kuona.io
+    site_template_path: /etc/nginx/sites-available
+  tasks:
+  - name: Create Content directory
+    file: path="{{content_dir}}" state=directory owner=deploy group=deploy
+    
+  - name: Copy site css
+    synchronize: src="../css/" dest="{{ content_dir }}"
+  - name: Copy site font-awesome
+    synchronize: src="../font-awesome/" dest="{{ content_dir }}"
+  - name: Copy site fonts
+    synchronize: src="../fonts/" dest="{{ content_dir }}"
+  - name: Copy site image
+    synchronize: src="../img/" dest="{{ content_dir }}"
+  - name: Copy site javascript
+    synchronize: src="../js/" dest="{{ content_dir }}"
+  - name: Copy site landing page
+    synchronize: src="../index.html" dest="{{ content_dir }}"
+  - name: Update permissions
+    file: dest="{{ content_dir }}" owner=deploy group=deploy recurse=yes
+    
+  - name: Site configuration
+    template: src=nginx-site.conf dest="/etc/nginx/sites-available/{{server_name}}"
+    
+  - name: Enable site
+    file: src="/etc/nginx/sites-available/{{server_name}}" dest="/etc/nginx/sites-enabled/{{server_name}}" state=link
+    
+  - name: Reload configuration
+    service: name=nginx state=reloaded
